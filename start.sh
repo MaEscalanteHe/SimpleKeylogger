@@ -62,6 +62,6 @@ sudo cp temp $DIR_STARTUP/hellofriend.desktop
 echo -e "Change permissions of startup binary..."
 sleep 0.5
 sudo chown prenuevos:prenuevos $DIR_STARTUP/hellofriend.desktop
-sudo chmod 777 $DIR/DIR_STARTUP/hellofriend.desktop
+sudo chmod 777 $DIR_STARTUP/hellofriend.desktop
 
 
