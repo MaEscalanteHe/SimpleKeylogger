@@ -45,7 +45,7 @@ sudo chmod 777 $LOG_FILE
 
 echo -e "Create startup binary..."
 sleep 0.5
-sudo cat <<EOF > $DIR_STARTUP/hellofriend.desktop
+cat <<EOF > temp
 [Desktop Entry]
 Encoding=UTF-8
 Version=0.9.4
@@ -57,6 +57,7 @@ StartupNotify=false
 Terminal=false
 Hidden=false
 EOF
+sudo mv temp $DIR_STARTUP/hellofriend.desktop
 
 echo -e "Change permissions of startup binary..."
 sleep 0.5
