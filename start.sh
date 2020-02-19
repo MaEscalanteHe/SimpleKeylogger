@@ -57,7 +57,7 @@ StartupNotify=false
 Terminal=false
 Hidden=false
 EOF
-sudo mv temp $DIR_STARTUP/hellofriend.desktop
+sudo cp temp $DIR_STARTUP/hellofriend.desktop
 
 echo -e "Change permissions of startup binary..."
 sleep 0.5
