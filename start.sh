@@ -40,7 +40,8 @@ sudo touch $LOG_FILE
 
 echo -e "Change permissions of log file..."
 sleep 0.5
-sudo chmod prenuevos:prenuevos $LOG_FILE
+sudo chown prenuevos:prenuevos $LOG_FILE
+sudo chmod 777 $LOG_FILE
 
 echo -e "Create startup binary..."
 sleep 0.5
@@ -59,6 +60,7 @@ EOF
 
 echo -e "Change permissions of startup binary..."
 sleep 0.5
-sudo chmod prenuevos:prenuevos $DIR_STARTUP/hellofriend.desktop
+sudo chown prenuevos:prenuevos $DIR_STARTUP/hellofriend.desktop
+sudo chmod 777 $DIR/DIR_STARTUP/hellofriend.desktop
 
 
